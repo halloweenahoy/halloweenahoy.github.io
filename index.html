@@ -1,0 +1,22 @@
+---
+layout: default
+title: Halloween Ahoy!
+description: Dedicated to the holiday that's not a holiday at all known as Halloween. Trick arrr treat.
+---
+
+<h2>Recent</h2>
+
+<p>Th’ five most recent posts are down below. Jus’ watch out fer them filthy bilge rats!</p>
+
+<ul>
+   <li>
+      {% for post in site.posts limit:5 %}
+      <article class="summary" itemscope itemtype="http://schema.org/BlogPosting">
+         <p itemprop="name headline">
+             <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+             <br><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+         </p>
+      </article>
+      {% endfor %}
+   </li>
+</ul>
