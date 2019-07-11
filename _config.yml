@@ -5,6 +5,8 @@ author:
   email: halloweenahoy@gmail.com
 permalink: /:title/
 markdown: kramdown
+talkyard_server_url: https://comments-for-halloweenahoy-com.talkyard.net
+talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
