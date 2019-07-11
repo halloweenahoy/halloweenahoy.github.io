@@ -3,8 +3,6 @@ description: Dedicated to the holiday that's not a holiday at all known as Hallo
 author:
   name: Halloween Ahoy!
   email: halloweenahoy@gmail.com
-url: "https://halloweenahoy.com" # the base hostname & protocol for your site
-enforce_ssl: "halloweenahoy.com"
 permalink: /:title/
 markdown: kramdown
 plugins:
