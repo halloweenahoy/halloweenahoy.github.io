@@ -24,7 +24,7 @@ description: Tags used to describe content on Halloween Ahoy!
   <ul>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
     <li>
-      <article class="summary" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="summary" itemscope itemtype="https://schema.org/BlogPosting">
         <p>
           <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></br>
           <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
