@@ -11,7 +11,7 @@ description: View an archive of all posts on Halloween Ahoy!
 <ul>
    <li>
       {% for post in site.posts %}
-      <article class="summary" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="summary" itemscope itemtype="https://schema.org/BlogPosting">
          <p itemprop="name headline">
             <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             <br><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
