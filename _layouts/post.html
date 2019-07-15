@@ -4,7 +4,7 @@ layout: default
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
  
-    <h2 class="after-web--heading" itemprop="name headline">{{ page.title | escape }}</h2>
+    <h2 class="name headline" itemprop="name headline">{{ page.title | escape }}</h2>
 
     <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></p>
 
@@ -28,5 +28,9 @@ layout: default
     {% endif %}
   </p>
  </div>
+ 
+ <h3>Comments</h3>
+ 
+ {% include talkyard-comments.html %}
  
 </article>
