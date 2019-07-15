@@ -30,21 +30,21 @@
 
   <header>
     <h1><a href="{{ site.baseurl | prepend: site.url }}/">Halloween Ahoy!</a></h1>
-    <p>
-      <nav><a href="{{ '/about/' | prepend: site.baseurl | prepend: site.url }}">About</a> × <a href="{{ '/archive/' | prepend: site.baseurl | prepend: site.url }}">Archive</a> × <a href="{{ '/tags/' | prepend: site.baseurl | prepend: site.url }}">Tags</a>        × <a href="mailto:{{ site.author.email }}">Contact</a></nav>
-    </p>
-    <hr>
+    <p><nav><a href="{{ '/about/' | prepend: site.baseurl | prepend: site.url }}">About</a> × <a href="{{ '/archive/' | prepend: site.baseurl | prepend: site.url }}">Archive</a> × <a href="{{ '/tags/' | prepend: site.baseurl | prepend: site.url }}">Tags</a> × <a href="mailto:{{ site.author.email }}">Email</a></nav></p>
+     <hr>
   </header>
 
   <main aria-label="Content" role="main">
     {{ content }}
   </main>
 
-  <hr>
-
+<hr>
+  
   <footer>
-    <p>&copy; {{ site.date | default: site.time | date: "%Y" }} <a href="{{ site.baseurl | prepend: site.url }}/">{{ site.author.name }} × <a href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">RSS</a> × <a href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}">Sitemap</a></p>
+    <p>&copy; {{ site.date | default: site.time | date: "%Y" }} <a href="{{ site.baseurl | prepend: site.url }}/">{{ site.author.name }}</a> × <a href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">RSS</a> × <a href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}">Sitemap</a></p>  
   </footer>
+  
+  {% include follow-buttons.html %}
 
 </body>
 
