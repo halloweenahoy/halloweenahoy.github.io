@@ -1,8 +1,12 @@
 title: Halloween Ahoy!
-description: Dedicated to the holiday that's not a holiday at all known as Halloween. Trick arrr treat.
+description: T. Trick arrr treat.
 author:
   name: Halloween Ahoy!
   email: halloweenahoy@gmail.com
+facebook_url: 
+twitter_url: https://twitter.com/halloweenahoy
+pinterest_url:
+instagram_url: https://www.instagram.com/halloweenahoy/
 permalink: /:title/
 markdown: kramdown
 talkyard_server_url: https://comments-for-halloweenahoy-com.talkyard.net
