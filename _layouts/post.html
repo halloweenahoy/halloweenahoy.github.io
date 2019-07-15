@@ -2,22 +2,31 @@
 layout: default 
 ---
 
-<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
  
-    <h2 itemprop="name headline">{{ page.title | escape }}</h2>
+    <h2 class="after-web--heading" itemprop="name headline">{{ page.title | escape }}</h2>
 
     <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></p>
 
     <div itemprop="articleBody">
         {{ content }}
     </div>
-  
-  <p>{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">#{{ tag }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</p>    
-  
-  {% include share-buttons.html %}
-  
-  <h3>Comments</h3>
-  
-  {% include talkyard-comments.html %}
-  
+ 
+ {% include share-buttons.html %}
+ 
+ <div class="tags"><p>{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_escape }}" title="Posts tagged {{ tag }}" rel="tag">#{{ tag }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</p></div>
+ 
+ <div class="post-nav">
+  <p>
+    {% if page.next.url %}
+    <a href="{{page.next.url}}">< Newer Post</a>
+    {% endif %}
+  </p>
+    <p>
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}">Older Post ></a>
+    {% endif %}
+  </p>
+ </div>
+ 
 </article>
