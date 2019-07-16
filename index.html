@@ -9,11 +9,11 @@ description: A blog celebrating Halloween, everyday. Trick arrr treat!
 
 <h3>Recent</h3>
 
-<p>Th' five most recent posts are down below. Jus' watch out fer them filthy bilge rats!</p>
+<p>Th' three most recent posts are down below. Jus' watch out fer them filthy bilge rats!</p>
 
 <ul>
    <li>
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts limit:3 %}
       <article class="summary" itemscope itemtype="https://schema.org/BlogPosting">
          <p itemprop="name headline">
              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
@@ -24,6 +24,8 @@ description: A blog celebrating Halloween, everyday. Trick arrr treat!
    </li>
 </ul>
 
-<h3>Instagram</h3>
+<h3>Instafeed</h3>
+
+<p>Th' latest from our feed. Skewer th' follow button!</p>
 
 {% include instagram.html clientId="ed7b5036b29a48d482376be6c3413d24" userId="260010543" accessToken="260010543.ed7b503.9571dca5a7cb4914b866004d67c96ef0" %}
