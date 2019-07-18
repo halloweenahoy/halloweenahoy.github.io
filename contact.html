@@ -6,7 +6,7 @@ description: Halloween Ahoy! contact form.
 
 <h2>Contact</h2>
 
-<p>Use th' followin' form... 'Tis surely faster than a message in a bottle.</p>
+<p>Use th' followin' form and we shall get back t' ye... 'Tis surely faster than a message in a bottle!</p>
 
 <form action="https://formspree.io/halloweenahoy@gmail.com" method="POST">
   <input type="text" id="name" class="" name="name" placeholder="Name..." required="required"/>
@@ -15,5 +15,4 @@ description: Halloween Ahoy! contact form.
   <textarea id="message" class="multi-line" name="message" placeholder="Message..." cols="30" rows="5" required="required"></textarea>
   <input type="text" name="_gotcha" style="display:none" />
   <input type="submit" id="submit" value="Send"/>
-  <input type="hidden" name="_next" value="{{ '/thanks/' | prepend: site.baseurl | prepend: site.url }}" />
 </form>
