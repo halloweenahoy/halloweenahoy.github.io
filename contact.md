@@ -1,27 +1,14 @@
 ---
+layout: default
 title: Contact
 description: Halloween Ahoy! contact form. Send us an email.
-forms:
-  - to: halloweenahoy@gmail.com
-    subject: New submission!
-    redirect: /
-    form_engine: formspree
-    placeholders: false
-    fields: 
-      - name: name
-        input_type: text
-        placeholder: Name
-        required: true
-      - name: email
-        input_type: email
-        placeholder: Email address
-        required: true
-      - name: message
-        input_type: textarea
-        placeholder: Message
-        required: true
-      - name: submit
-        input_type: submit
-        placeholder: Submit form
-        required: true
 ---
+
+<h2>Contact</h2>
+
+<form action="//formspree.io/halloweenahoy@gmail.com" method="POST">
+    <p>Name: </p><input type="text" name="name"><br />
+    <p>Email: </p><input type="email" name="email"><br />
+    <p>Message: </p><input type="textarea" name="textarea"><br />
+    <input type="submit" value="Send">
+</form>
