@@ -1,8 +1,8 @@
 title: Halloween Ahoy!
-description: This here be a Halloween blog. Trick arrr treat!.
+description: This here be a Halloween blog. Trick arrr treat!
 author:
   name: Halloween Ahoy!
-og_image: "/images/og.png"
+og_image: "https://halloweenahoy.com/images/og.png"
 twitter:
   username: halloweenahoy
   card: summary
