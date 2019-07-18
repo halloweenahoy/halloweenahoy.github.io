@@ -46,16 +46,17 @@ input[type="submit"] {
   height: 3em;
   border: 0;
   border-radius: 5px;
-  padding: 0;  
-  background: rgba(0, 0, 0, 0.1);
+  padding: 0;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
   color: #1B1B1B;
   text-align: center;
 }
 
 input[type="submit"]:hover {
-  background-color: #1B1B1B;
-  border-color: #1B1B1B;
-  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #1B1B1B;
   cursor: pointer;
 }
 
