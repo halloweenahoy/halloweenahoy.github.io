@@ -54,6 +54,8 @@ window.cookieconsent.initialise({
   <main aria-label="Content" role="main">
     {{ content }}
   </main>
+  
+  {% if page.forms[0] %}{% include form.html form="1" %}{% endif %}
 
 <hr>
   
