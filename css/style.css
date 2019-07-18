@@ -22,7 +22,7 @@ form {
 }
 
 form input {
-  font-family: monospace;
+  font-family: 'Open Sans', sans-serif;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background: white;
@@ -39,9 +39,8 @@ form textarea {
 }
 
 input[type="submit"] {
-  width: 35%;
+  width: 15%;
   height: 4em;
-  margin: 0 auto;
   border: 0;
   border-radius: 20px;
   padding: 0;  
