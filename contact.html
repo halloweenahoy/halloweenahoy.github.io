@@ -13,5 +13,5 @@ description: Halloween Ahoy! contact form. Send us an email.
   <textarea id="message" class="multi-line" name="message" placeholder="Message" cols="30" rows="5" required="required"></textarea>
   <input type="text" name="_gotcha" style="display:none" />
   <input type="submit" id="submit" value="Send"/>
-  <input type="hidden" name="_next" value="//path/thanks.html" />
+  <input type="hidden" name="_next" value="{{ '/thanks/' | prepend: site.baseurl | prepend: site.url }}" />
 </form>
