@@ -50,6 +50,12 @@ input[type="submit"] {
   background: rgba(0, 0, 0, 0.1);
   color: #1B1B1B;
   text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: purple;
+  border-color: purple;
+  color: white;
   cursor: pointer;
 }
 
