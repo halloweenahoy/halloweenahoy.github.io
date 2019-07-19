@@ -148,10 +148,43 @@ font-style: italic;
 /* Blockquotes */
 
 blockquote {
-margin: 10px 20px 10px;
-padding: 0px 15px;
-border-left: 2px solid rgba(0, 0, 0, 0.1);
-font-size: 21px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+	padding-right: 0;
+	padding-left: 20px;
+	max-width: 636px;
+	position: relative;
+	p {
+		
+		font-size: 21px;
+		font-weight: 700;
+		padding: 0 34px;
+	}
+	&:before{
+		content: '';
+    display: block;
+    position: absolute;
+    width: 96%;
+    top: -2px;
+    left: 0;
+    border: 2px #FFFFFF;
+		position: inherit;
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 96%;
+		bottom: -2px;
+		left: 0;
+		border: 2px #FFFFFF;
+		position: inherit;
+	}
+	cite{
+		display: block;
+    text-align: right;
+		padding-right: 7%;
+	}
 }
 
 /* Horizontal rule */
