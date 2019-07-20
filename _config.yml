@@ -2,11 +2,7 @@ title: Halloween Ahoy!
 description: Trick arrr treat
 author:
   name: Halloween Ahoy!
-og_image: "https://halloweenahoy.com/images/og.png"
-twitter:
-  username: halloweenahoy
-  card: summary
-  email: halloweenahoy@gmail.com
+og_image: /images/og.png
 facebook_url: 
 twitter_url: https://twitter.com/halloweenahoy
 pinterest_url:
