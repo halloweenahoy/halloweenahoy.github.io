@@ -145,16 +145,18 @@ list-style-type: none;
 text-align: right;
 }
 
-.center {
-text-align: center;
-}
-
 /* Figures */
 
 img {
 width: 100%;
 height: auto;
 border-radius: 5px;
+}
+
+figcaption {
+font-size: 12px;
+color: #AAAAAA;
+text-align: center;
 }
 
 /* Responsive videos */
