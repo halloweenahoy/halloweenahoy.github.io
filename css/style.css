@@ -145,18 +145,17 @@ list-style-type: none;
 text-align: right;
 }
 
-/* Figures */
+/* IMG */
 
-figure, img {
+img {
 width: 100%;
 height: auto;
 border-radius: 5px;
 }
 
-figcaption {
-font-size: 12px;
-color: #AAAAAA;
+aside {
 text-align: center;
+color: #AAAAAA;
 }
 
 /* Responsive videos */
