@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: halloweenahoy.com/sitemap.xml
