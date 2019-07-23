@@ -177,6 +177,10 @@ height: 100%;
 
 /* Tags */
 
+.tags, .share {
+color: #AAAAAA;
+}
+
 .tags a, .share a {
 color: #AAAAAA;
 }
