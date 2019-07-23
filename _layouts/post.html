@@ -12,9 +12,7 @@ layout: default
         {{ content }}
     </div>
  
- <div class="share">
-    <p><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Share</a> / <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }} title="Share on Twitter">Tweet</a></p>
-</div>
+{% include  share.html %}
  
  <div class="tags">
     <p>{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_escape }}" title="Posts tagged {{ tag }}" rel="tag">#{{ tag }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</p>
