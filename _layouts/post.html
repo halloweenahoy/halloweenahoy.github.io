@@ -13,9 +13,9 @@ layout: default
     </div>
  
  <div class="share">
-  <p><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=halloweenahoy" target="_blank" title="Share this post on Twitter">Tweet</a> / <a href="http://www.facebook.com/sharer.php?s=100&p[url]={{ site.url }}/{{ page.url }}&p[title]={{ page.title }}" target="_blank" title="Share this post on Facebook">Share</a></p>
+  <p><a href="http://www.facebook.com/sharer.php?s=100&p[url]={{ site.url }}/{{ page.url }}&p[title]={{ page.title }}" target="_blank" title="Share this post on Facebook">Share</a> / <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=halloweenahoy" target="_blank" title="Share this post on Twitter">Tweet</a></p>
  </div>
-
+ 
  <div class="tags">
     <p>{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_escape }}" title="Posts tagged {{ tag }}" rel="tag">#{{ tag }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</p>
  </div>
